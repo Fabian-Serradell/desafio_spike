@@ -613,4 +613,8 @@ print(y_pred)
 print(y_test)
 
 #%% [markdown]
-#El modelo no predice ningún evento de caudal 
+#El modelo no predice ningún evento de caudal extremo. Para este caso la métrica de accuracy no es buena
+#porque puedo tener un vector completo con 0s y aún asi tener un buen porcentaje. En este caso se debe usar
+#alguna métrica de clasificación binaria para dar cuenta de los casos negativos.
+#
+#Para seguir trabajando con redes neuronales sería bueno agregar datos para poder alimentar mejor la red, queda pendiente.
